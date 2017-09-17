@@ -1,0 +1,21 @@
+{
+  "name": "poc.exchange-rate",
+  "version": "0.0.1",
+  "description": "POC.ExchangeRate",
+  "main": "server.js",
+  "author": {
+    "name": "Julian Mosterett"
+  },
+  "dependencies": {
+    "node-schedule": "*",
+    "xml2js": "*",
+    "concat-stream": "*",
+    "eyes": "*",
+    "async": "*",
+    "tedious": "*",
+    "sequelize": "*" 
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  }
+}

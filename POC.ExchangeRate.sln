@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "POC.ExchangeRate", "POC.ExchangeRate\POC.ExchangeRate.njsproj", "{788D6B26-BC22-4689-839A-3E0ADEBE4619}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{788D6B26-BC22-4689-839A-3E0ADEBE4619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{788D6B26-BC22-4689-839A-3E0ADEBE4619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{788D6B26-BC22-4689-839A-3E0ADEBE4619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{788D6B26-BC22-4689-839A-3E0ADEBE4619}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2172A71-AE21-4DAB-8986-D01D3ADF9349}
+	EndGlobalSection
+EndGlobal
