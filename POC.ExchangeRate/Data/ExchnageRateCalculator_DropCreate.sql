@@ -1,0 +1,116 @@
+USE [master]
+GO
+
+/****** Object:  Database [ExchangeRateCalculator]    Script Date: 2017/09/18 12:31:55 PM ******/
+DROP DATABASE [ExchangeRateCalculator]
+GO
+
+/****** Object:  Database [ExchangeRateCalculator]    Script Date: 2017/09/18 12:31:55 PM ******/
+CREATE DATABASE [ExchangeRateCalculator]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'ExchangeRateCalculator', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL12.DATATILT\MSSQL\DATA\ExchangeRateCalculator.mdf' , SIZE = 5120KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
+ LOG ON 
+( NAME = N'ExchangeRateCalculator_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL12.DATATILT\MSSQL\DATA\ExchangeRateCalculator_log.ldf' , SIZE = 2048KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET COMPATIBILITY_LEVEL = 120
+GO
+
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [ExchangeRateCalculator].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET ANSI_NULL_DEFAULT OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET ANSI_NULLS OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET ANSI_PADDING OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET ANSI_WARNINGS OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET ARITHABORT OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET AUTO_CLOSE OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET AUTO_SHRINK OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET AUTO_UPDATE_STATISTICS ON 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET CURSOR_DEFAULT  GLOBAL 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET CONCAT_NULL_YIELDS_NULL OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET NUMERIC_ROUNDABORT OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET QUOTED_IDENTIFIER OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET RECURSIVE_TRIGGERS OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET  DISABLE_BROKER 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET TRUSTWORTHY OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET PARAMETERIZATION SIMPLE 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET HONOR_BROKER_PRIORITY OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET RECOVERY FULL 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET  MULTI_USER 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET PAGE_VERIFY CHECKSUM  
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET DB_CHAINING OFF 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET TARGET_RECOVERY_TIME = 0 SECONDS 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET DELAYED_DURABILITY = DISABLED 
+GO
+
+ALTER DATABASE [ExchangeRateCalculator] SET  READ_WRITE 
+GO
+
+
